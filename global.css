@@ -16,7 +16,6 @@ p {
     animation-name: show;
     animation-duration: 1s;
     animation-delay: 0.4;
-    animation-play-state: paused;
 
 }
 
