@@ -4,14 +4,14 @@ html {
     font-family: 'Atkinson Hyperlegible', sans-serif;
 }
 
-h1 {
+#header {
     font-size: 250%;
     text-align: center;
     animation-name: show;
     animation-duration: 1s;
 }
 
-p {
+#text {
     text-align: center;
     animation-name: show;
     animation-duration: 1s;
