@@ -1,4 +1,4 @@
-{
+export default {
     "events" : [
         {
             "eventname":"event name",
