@@ -1,4 +1,4 @@
 // Main script content
 
-const eventsJSON = require('./assets/test/events.json'); 
+import eventsJSON from './assets/test/events.json'; 
 document.getElementById("text").innerHTML = eventsJSON;
