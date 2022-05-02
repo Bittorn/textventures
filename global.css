@@ -3,3 +3,24 @@
 html {
     font-family: 'Atkinson Hyperlegible', sans-serif;
 }
+
+h1 {
+    font-size: 250%;
+    text-align: center;
+    animation-name: show;
+    animation-duration: 1s;
+}
+
+p {
+    text-align: center;
+    animation-name: show;
+    animation-duration: 1s;
+    animation-delay: 0.4;
+    animation-play-state: paused;
+
+}
+
+@keyframes show {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
