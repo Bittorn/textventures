@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-*, *::before, **::after {
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
@@ -25,16 +25,19 @@ body {
     box-shadow: 0 0 10px 2px;
 }
 
+.header {
+    font-size: 250%;
+}
+
 .btn-grid {
     display: grid;
     grid-template-columns: repeat(auto, 1);
-    gap: 5px;
-    /* margin-top: 10px; */
+    gap: 3px;
+    margin-top: 10px;
 }
 
 .btn {
     background-color: hsl(200, 100%, 50%);
-    border: 1px solid hsl(200, 100%, 30%);
     border-radius: 5px;
     padding: 5px 10px;
     color: white;
@@ -42,9 +45,5 @@ body {
 }
 
 .btn:hover {
-    border-color: black;
-}
-
-.header {
-    font-size: 250%;
+    border: 1px solid hsl(200, 100%, 30%);
 }
