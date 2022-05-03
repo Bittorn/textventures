@@ -1,4 +1,4 @@
 // Main script content
 
 import eventsJSON from './assets/test/events.js'; 
-document.getElementById("text").innerHTML = eventsJSON;
+document.getElementById("text").innerHTML = JSON.stringify(eventsJSON);
