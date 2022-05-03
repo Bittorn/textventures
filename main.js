@@ -3,12 +3,17 @@ let eventHeader = document.getElementById("event-header");
 let eventText = document.getElementById("event-text");
 let eventButtons = document.getElementById("event-options")
 
+const canvas = document.querySelector("canvas");
+const ctx = canvas.getContext("2d");
+
+canvas.height = window.innerHeight;
+canvas.width = window.innerWidth;
+
 import eventsJSON from './assets/test/events.js';
 
 function loadEvent(event) {
     eventButtons.innerHTML = "";
-    
-    console.log("container loaded");
+
     eventHeader.innerHTML = eventsJSON.events[event].name;
     eventText.innerHTML = eventsJSON.events[event].text;
     
@@ -21,4 +26,11 @@ function loadEvent(event) {
     }
 }
 
-window.onload = () => loadEvent(0);
+window.addEventListener("load", () => {
+    const canvas = document.querySelector("canvas");
+    const ctx = canvas.getContext("2d");
+
+    ctx.strokeRect(100, 100, 200, 200);
+
+    loadEvent(0);
+})
