@@ -2,7 +2,7 @@
 
 *, *::before, **::after {
     box-sizing: border-box;
-    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-family: Atkinson Hyperlegible, sans-serif;
 }
 
 body {
@@ -48,9 +48,4 @@ body {
 
 .header {
     font-size: 250%;
-}
-
-@keyframes show {
-    from {opacity: 0;}
-    to {opacity: 1;}
 }
