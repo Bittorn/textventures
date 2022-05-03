@@ -11,7 +11,7 @@ try {
     eventText.innerHTML = error.message;
 }
 
-try {
+/*try {
     eventHeader.innerHTML = eventsJSON.events.name;
 } catch (error) {
     eventHeader.innerHTML = "Event name error";
@@ -21,6 +21,6 @@ try {
     eventText.innerHTML = eventsJSON.events.text;
 } catch (error) {
     eventText.innerHTML = "Event text error";
-}
+}*/
 
-eventText.innerHTML = eventsJSON;
+//eventText.innerHTML = eventsJSON;
