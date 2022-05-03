@@ -6,6 +6,7 @@ const eventButtons = document.getElementById("event-options")
 import eventsJSON from './assets/test/events.js';
 
 function loadEvent(event) {
+    console.log("container loaded");
     eventHeader = eventsJSON.events[event].name;
     eventText = eventsJSON.events[event].text;
     
@@ -17,4 +18,8 @@ function loadEvent(event) {
     }
 }
 
+console.log(eventsJSON);
+console.log(eventsJSON.events);
+console.log(eventsJSON.events[0]);
+console.log(eventsJSON.events[0].name);
 document.getElementsByClassName("container").onload = loadEvent(0);
