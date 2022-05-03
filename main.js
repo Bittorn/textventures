@@ -7,7 +7,7 @@ import eventsJSON from './assets/test/events.js';
 eventHeader = eventsJSON.events[0].name;
 eventText = eventsJSON.events[0].text;
 
-for (const x in eventsJSON.events[0].options) {
+for (const x of eventsJSON.events[0].options) {
     const btn = document.createElement("button");
     btn.innerHTML = x.text;
     eventButtons.appendChild(btn);
