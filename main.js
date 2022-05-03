@@ -1,16 +1,14 @@
-const eventHeader = document.getElementById("event-header");
-const eventText = document.getElementById("event-text");
+const eventHeader = document.getElementById("event-header").innerHTML;
+const eventText = document.getElementById("event-text").innerHTML;
+const eventButtons = document.getElementById("event-options")
 
 import eventsJSON from './assets/test/events.js';
 
-try {
-    eventHeader.innerHTML = eventsJSON.events.name;
-} catch (error) {
-    eventHeader.innerHTML = error.message;
-}
+eventHeader = eventsJSON.events[0].name;
+eventText = eventsJSON.events[0].text;
 
-try {
-    eventText.innerHTML = eventsJSON.events.text;
-} catch (error) {
-    eventText.innerHTML = error.message;
+for (const x in eventsJSON.events[0].options) {
+    const btn = document.createElement("button");
+    btn.innerHTML = x.text;
+    eventButtons.appendChild(btn);
 }
