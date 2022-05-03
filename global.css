@@ -40,10 +40,22 @@ body {
 .btn-grid {
     display: grid;
     grid-template-columns: repeat(1, auto);
-    gap: 8px;
-    margin-top: 12px;
+    gap: 10px;
+    margin-top: 20px;
 }
 
-#header {
+.btn {
+    background-color: hsl(200, 100%, 50%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+}
+
+.btn:hover {
+    border-color: black;
+}
+
+.header {
     font-size: 250%;
 }
