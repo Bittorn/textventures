@@ -13,7 +13,7 @@ function loadEvent(event) {
     for (const x of eventsJSON.events[event].options) {
         const btn = document.createElement("button");
         btn.innerHTML = x.text;
-        btn.onclick = loadEvent(x.destination);
+        btn.onclick = () => loadEvent(x.destination);
         eventButtons.appendChild(btn);
     }
 }
