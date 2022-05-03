@@ -1,7 +1,7 @@
 // Event stuff
-const eventHeader = document.getElementById("event-header").innerHTML;
-const eventText = document.getElementById("event-text").innerHTML;
-const eventButtons = document.getElementById("event-options")
+let eventHeader = document.getElementById("event-header").innerHTML;
+let eventText = document.getElementById("event-text").innerHTML;
+let eventButtons = document.getElementById("event-options")
 
 import eventsJSON from './assets/test/events.js';
 
