@@ -22,3 +22,5 @@ try {
 } catch (error) {
     eventText.innerHTML = "Event text error";
 }
+
+eventText.innerHTML = eventsJSON;
